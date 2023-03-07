@@ -1,0 +1,40 @@
+<div class="block mx-auto my-12 p-8 bg-white w-1/3 border border-gray-800 rounded-lg
+ shadow-lg text-gray-800">
+ 
+    <h1 class="text-3x1 font-bold text-center">Registe </h1>
+
+    <form action="/register" method="post" class="mt-4"> 
+        <input class="border border-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 
+        bg-gray-300 focus:bg-white" name="email" placeholder="email" type="email" id="email"size="30" required />
+        <br></br>
+        <input class="border border-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 
+        bg-gray-300 focus:bg-white" name="appaterno" placeholder="Apelido Paterno" type="text" />
+        <br></br>
+        <input class="border border-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 
+        bg-gray-300 focus:bg-white" name="apmaterno" placeholder="Apelido Materno" type="text" />
+        <br></br>
+        <input class="border border-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 
+        bg-gray-300 focus:bg-white" name="nombre" placeholder="Nombre(s)" type="text" />
+        <br></br>
+        <input class="border border-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 
+        bg-gray-300 focus:bg-white" name="fechanacimiento" placeholder="Fecha de Nacimiento" type="date"  value="" min="" max=""  />
+        <br></br>
+        <input class="border border-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 
+        bg-gray-300 focus:bg-white" name="telefono" placeholder="Numero Tel" type="tel"  id="Numero"  minlength="10" maxlength="10" />
+        
+        <input type="password" name="password" placeholder="password" 
+        class="border border-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 
+        bg-gray-300 focus:bg-white" required>
+        <button type="submit" class="rounded-md bg-purple-700 w-full text-lg text-white 
+        font-semibold p-2 my-3 hover:bg-white-700 focus:bg-purple-600">Send</button>
+
+        {{#if error}}
+            <p class="text-red-500 font-bold text-lg my-3 ">{{error}}</p>
+        {{/if}}
+
+    </form>
+ 
+ 
+ </div>
+
+
